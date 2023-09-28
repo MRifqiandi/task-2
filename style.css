@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+a.explore {
+  color: #ffffff;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  color: #003459;
+}
+
+ul {
+  display: flex;
+  gap: 2em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #f7dba7;
+  color: #002a48;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img.dogs {
+  height: 221px;
+}
+/* 
+svg {
+  background-image: url(img/leaf.png);
+  background-position: center;
+} */
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7dba7;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url(img/leaf.png); */
+  background-position: center;
+  background-size: cover;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 1em;
+  background-color: #f7dba7;
+}
+
+.main-content-background {
+  background-color: #f7dba7;
+  /* background-image: url(img/leaf.png); */
+  background-position: center;
+  background-size: cover;
+}
+
+aside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.text-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3em;
+  padding: 0.5em;
+}
+
+.text-button p {
+  font-size: 1.2em;
+}
+
+.filter-dogs {
+  display: none;
+}
+
+button.aside-explore {
+  padding: 0.9em 2em;
+  border-radius: 57px;
+
+  border: none;
+  background-color: #003459;
+}
+
+.choose-pets {
+  display: flex;
+  padding: 1em 1em;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-pets {
+  display: flex;
+  background-image: url(img/leaf.png);
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+  padding-bottom: 2.5em;
+}
+
+.dog-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 1px 0 #000000;
+  border-radius: 12px;
+  gap: 10px;
+}
+
+img.dog-1s {
+  height: 169px;
+  width: 169px;
+}
+
+button.view-more-button {
+  padding: 0.5em 4em;
+  background-color: #f7dba7;
+  border: 1px 1px solid #003459;
+  border-radius: 57px;
+}
+
+a,
+.view-more-button {
+  color: #003459;
+}
+
+.view-more-button:hover {
+  cursor: pointer;
+}
+
+footer {
+  padding: 0.5em;
+  background-color: #fceed5;
+  border-radius: 20px 20px 0 0;
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  gap: 20px;
+}
+
+.horizontal-line {
+  border: none;
+  border-top: 1px solid #003459;
+  width: 100%;
+}
+
+.container-footer p {
+  color: #003459;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.container-footer img {
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 1px 5px 10px #000000;
+}
+
+/* Hamburger Button*/
+
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  display: none;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: #002a48;
+  margin: 4px 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.navbar {
+  text-align: center;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  margin: 10px 0;
+}
+
+.nav-list a {
+  display: flex;
+  color: #002a48;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Animasi hamburger */
+.menu-toggle.active .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 4px);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -4px);
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .navbar {
+    display: none;
+    background-color: #f7dba7;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .nav-list {
+    padding: 1em;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+}

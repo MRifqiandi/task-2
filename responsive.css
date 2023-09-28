@@ -1,0 +1,58 @@
+@media (min-width: 768px) {
+  svg {
+    background-color: #f7dba7;
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  header > h1 {
+    font-size: 2em;
+  }
+
+  img.dogs {
+    height: 300px;
+  }
+
+  aside.text-button {
+    display: flex;
+    justify-content: space-between;
+    gap: 10em;
+  }
+  .text-image-button {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+  }
+
+  .choose-pets {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  /* .our-pets {
+    display: flex;
+    flex-direction: row;
+  } */
+
+  .main-content {
+    justify-content: space-between;
+  }
+
+  .filter-dogs {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 2em;
+    border-radius: 20px;
+    box-shadow: 1px 5px 5px #000000;
+  }
+
+  .filter-dogs-gender {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+}
